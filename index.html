@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<meta property="og:title" content="✨All that glitters is not gold: the downfall of trying to use NY Data✨ ">
+<meta property="og:description" content="Trying and falling and trying again to use a dataset about NY">
+<meta property="og:type" content="article">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>✨All that glitters is not gold: the downfall of trying to use NY Data✨ 
+    </title>
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-rendering: optimizeLegibility;
+            background-color: #FFEFFF; 
+        }
+
+        .content {
+            max-width: 800px; 
+            margin: auto;
+        }
+
+        .header {
+            padding: 3em 0;
+        }
+
+        a {
+            color: #6A0DAD;
+        }
+
+        .footer {
+            background: #d8bfd8;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 4em;
+            padding: 4em 0;
+        }
+
+        figure {
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.5em;
+            color: #666;
+        }
+
+        h1 {
+            font-family: 'Lora', Georgia, serif;
+            font-weight: bold;
+            font-size: 3em;
+            line-height: 1.1;
+        }
+
+        .subhead {
+            font-family: 'Lora', Georgia, serif;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        ul {
+            margin: 0;
+            padding-bottom: 1em;
+            line-height: 1.6;
+        }
+
+        iframe {
+            padding-bottom: 1.2em;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background: #fff880;
+        }
+
+        /* margin on mobile */
+        @media (max-width: 640px) {
+            body {
+                font-size: 18px;
+            }
+            .content {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+        }
+
+    </style>
+    </head>
+  <body>
+    <div class="content">
+        <div class="header">
+            <h1>✨All that glitters is not gold: the downfall of trying to use NYC Data✨</h1>
+            <p class="subhead"> </p>
+        </div>
+        <div class="byline">
+            <p>By <a href="https://mandiuu.github.io/">Carla Mandiola</a></p>
+        </div>
+        <p>This story begins on November 21, 2023, when I had the epiphany that it was a good idea to work with the data about baby names in New York. 
+         I sent an email asking for it to the Department of Health and Mental Hygiene,
+            and not one but two lovely people answered me, giving me the link to the <a target="_new"
+            href="https://data.cityofnewyork.us/Health/Popular-Baby-Names/25th-nujf/about_data">information</a>
+            and also, an exclusive item:
+             </p>
+
+        <p>"Years 2020 and 2021 have not been posted yet, but they are attached."
+
+            </p>
+
+        <p>   I felt like the luckiest girl in the world. </p>
+
+        <p>I was confident about my data and wanted to show how cultural events affect the names parents choose for their kids. It was a good idea; I had the data; what could go wrong? 
+            </p>
+            <p> First, I saw the data set: 57.582 rows and six columns that indicate Year of Birth, Gender, Ethnicity, Child's First Name, Count, and Rank. Was I going to win a Pulitzer with this project? </p>
+            <p>Then I saw how many times these Popular Baby Names from NYC Open Data have been downloaded: more than 290.000 times. That's a huge number for me, a journalist from Rancagua, a little town in Chile. 
+            </p>
+
+            <iframe title="The number of downloads for this dataset exceeds the population of my hometown
+
+            " aria-label="Grouped Bars" id="datawrapper-chart-c41m9" src="https://datawrapper.dwcdn.net/c41m9/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="195" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+            </script>
+            
+            
+        <p> It was time to work with the data. First, I wanted to check the ten most popular female names from 2011 to 2019. 
+            But the result was weird: in the ranking, two names repeated, Sophia and Isabella, because one option was written in uppercase and lowercase, 
+            and the other in uppercase only. 
+        </p>
+        
+        <iframe title="Top 10 most popular female names according to NYC Open Data " aria-label="Column Chart" id="datawrapper-chart-Zd3nY" src="https://datawrapper.dwcdn.net/Zd3nY/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="593" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
+
+        <p>OKAY, THAT'S NOT OKAY. 
+        </p>
+        <p>I had to look at the male names because it's not easy to be a woman, and maybe the error was only in that category.</p>
+
+        <iframe title="Top 10 most popular male names according to NYC Open Data " aria-label="Column Chart" id="datawrapper-chart-dgvzq" src="https://datawrapper.dwcdn.net/dgvzq/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="593" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
+
+        <p>Yeah, they should have capitalized all the words correctly. I could do it on my own, but there may be more problems with this data. 
+        </p>
+        <p> That's why I wanted to see the popularity of my name, Carla, and see if there was a trend. </p>
+
+        <iframe title="Carla is not the most popular name in NY" aria-label="Column Chart" id="datawrapper-chart-Yr8iZ" src="https://datawrapper.dwcdn.net/Yr8iZ/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
+        
+        <p>There is a possibility that people no longer wanted to name their children "Carla."</p> 
+        <p>I wouldn't.</p>
+             But still, the data is incorrect. I decided to check how many names are registered annually in the data set.</p>  
+        
+             <iframe title="The dramatic downfall of babies in NY" aria-label="Interactive line chart" id="datawrapper-chart-U652R" src="https://datawrapper.dwcdn.net/U652R/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="403" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+             </script>
+
+        <p>In life, you have to know when to stop and when to give up, and although I wanted this to work, the NYC Open Data is incorrect in many aspects: </p>
+        <ul>
+            <li>Some names are lowercase.</li>
+            <li>Some are capitalized.</li>
+            <li>Some are not registered.</li>
+            <li>Some are duplicated.</li>
+        </ul>
+
+        <p>It is a shame because it is a database downloaded more than 290 thousand times and is incorrect. I sent an email to the Department of Health and Mental Hygiene telling of my bad experience, 
+            and I sent a <a target="_new"
+            href="https://opendata.cityofnewyork.us/engage/">formal complaint.</a>  </p> 
+
+         <p>Maybe it was time to give up, but according to a page with the <a target="_new"
+            href="https://www.sevenreflections.com/name/carla/">meaning of "Carla",</a> 
+            I have the "power and ability to choose my destiny and achieve anything I want in life." </p>   
+
+    <p>After that dose of self-help, I started looking for a database that did work 
+        and came across a package called <a target="_new"
+        href= "https://hadley.github.io/babynames/"> "baby names,"</a> created by <a target="_new"
+        href="https://hadley.nz/">Hadley Wickham,</a> 
+        the same person who created the ggplot2 and tidyverse packages. If this is not a sign, what is? </p>
+
+        <p>Thanks to him, I discovered the information collected by the Social Security Administration, where they
+             compiled all the names since 1926 of people borned in the United States. </p>
+        
+        <p>With this new database, I could look up how many people 
+            with my name were born between 2004 and 2019, and the answers match states with big Latino communities. </p>
+            <iframe title="Where are my Carlas at? " aria-label="Map" id="datawrapper-chart-F2kE4" src="https://datawrapper.dwcdn.net/F2kE4/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="636" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+            </script>
+
+    <p>Now that I can use the New York name database, I looked up the name "Carla" and saw its evolution over the years and when it was most popular. </p>
+    <iframe title="How many New Yorkers are named Carla?" aria-label="Interactive line chart" id="datawrapper-chart-B1yqx" src="https://datawrapper.dwcdn.net/B1yqx/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="392" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    </script>
+
+    <p>The moral of this story: never unquestioningly believe in databases, test them until you get bored, 
+        and if nothing else works, keep searching because someone probably already had your same problem. 🙃 
+    </p>
+
+  
+    <div class="footer">
+        <div class="content">
+            <p>Cheers for my <a href="https://github.com/Mandiuu/Wine/blob/main/index.html">code</a></p>
+        </div>
+    </div>
+</body>
+</html>
